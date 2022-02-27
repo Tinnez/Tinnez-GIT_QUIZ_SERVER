@@ -13,6 +13,4 @@ public class GameLauncher {
             e.printStackTrace();
         }
     }
-
-    // souttrrefds
 }

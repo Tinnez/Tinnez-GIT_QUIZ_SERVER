@@ -15,7 +15,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 
-public class Game implements Runnable {
+public class Game {
 
     private final List<PlayerConnectionHandler> players;
     private int totalNumberOfQuestions;
@@ -572,9 +572,8 @@ public class Game implements Runnable {
         System.out.println("Ready to play!");
 
         Thread.sleep(500);
-        new Thread(this).start();
-
-
+//        new Thread(this).start();
+        run();
     }
 
     public void broadcast_(String name, String message) {
@@ -800,7 +799,6 @@ public class Game implements Runnable {
         }
     }
 
-    @Override
     public void run() {
 
         try {

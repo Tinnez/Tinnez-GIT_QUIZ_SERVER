@@ -10,7 +10,7 @@ public class GameMessages {
 
     public static final String PLAYER_WON = ConsoleColors.GREEN + "Player %s won!\n" + ConsoleColors.RESET;
     public static final String PLAYER_LOST = ConsoleColors.RED +  "Player %s lost.\n" + ConsoleColors.RESET;
-    public static final String CORRECT_ANSWER = ConsoleColors.GREEN_BOLD_BRIGHT + "Congratulations %s, you guessed right!\n" + ConsoleColors.RESET;
+    public static final String CORRECT_ANSWER = ConsoleColors.GREEN_BOLD_BRIGHT + "Congratulations, you guessed right! Boa puto, ganhaste 10 pau.\n" + ConsoleColors.RESET;
     public static final String WRONG_ANSWER = ConsoleColors.RED_BOLD_BRIGHT + "You are dumb %s, you guessed wrong. The right answer was %s).\n" + ConsoleColors.RESET;
     public static final String NO_MORE_QUESTIONS = "There are no more new questions left. Please insert new questions.\n";
     public static final String REPEATED_QUESTIONS = "Pick another question, this one was already asked.\n";

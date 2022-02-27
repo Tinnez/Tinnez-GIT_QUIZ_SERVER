@@ -23,7 +23,7 @@ public class Player {
 
         new Thread(new KeyboardHandler(out, socket)).start();
         String line;
-        while (( line = in.readLine()) != null) {
+        while ((line = in.readLine()) != null) {
             System.out.println(line);
         }
         socket.close();
