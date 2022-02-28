@@ -2,7 +2,6 @@ package academy.mindswap.server;
 
 import academy.mindswap.server.commands.Command;
 import academy.mindswap.server.messages.GameMessages;
-import academy.mindswap.player.Player;
 
 import java.io.*;
 import java.net.ServerSocket;
@@ -601,7 +600,7 @@ public class Game {
 
     public String listPlayers() {
         StringBuffer buffer = new StringBuffer();
-        players.forEach(player -> buffer.append(player.getName()).append("\n"));
+        players.forEach(player -> buffer.append(player.getName()).append(" has " + player.getLivesRemaining() + " lives remaining").append("\n"));
         return buffer.toString();
     }
 
@@ -793,10 +792,6 @@ public class Game {
             return name;
         }
 
-        public String waitForUserInput() throws IOException {
-            String choice = in.readLine();
-            return choice;
-        }
     }
 
     public void run() {
