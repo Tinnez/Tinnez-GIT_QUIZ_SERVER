@@ -13,7 +13,7 @@ Inspired on Who Wants to Be a Millionaire, The Quiz Game is open to anyone willi
 
 •	To select the answer, players need to type one of the following letters (“a”, “b”, “c”, “d”) and double check his choice pressing Enter key;
 
-•	To select a lifeline, player need to type (“h” – for hint) or (“f” – for the 50-50 help);
+•	To select a lifeline, player need to type (“h” – for hint) , (“f” – for the 50-50 help) or (“s” - for swap the question);
 
 
 
@@ -25,7 +25,7 @@ Inspired on Who Wants to Be a Millionaire, The Quiz Game is open to anyone willi
 
 •	Each player receive three lifes once he joins the game, and 3 Lifelines to use at any point;
 
-•	The value of a correct answer will allways be 10€;
+•	The value of a correct answer will allways be 10 pau;
 
 •	Wrong answer will decrease the number of lifes;
 
@@ -49,4 +49,4 @@ Inspired on Who Wants to Be a Millionaire, The Quiz Game is open to anyone willi
 
 • Swap - gives the opportunity to change the question for a special one.
 
-Produced by:   ***Martim***  /  ***André F.***  /  ***Amadis***  /  ***André A.***
+Produced by:  ***Amadis A.*** / / ***André A.*** / /  ***André F.*** / /  ***Martim M.***   
