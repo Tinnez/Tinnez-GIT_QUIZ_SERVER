@@ -31,9 +31,9 @@ Inspired on Who Wants to Be a Millionaire, The Quiz Game is open to anyone willi
 
 •	The game will end when all the questions are made or one of the players give up;
 
-•	The player with most € at the end of the game will be declared the winner;
+•	The player with remaining lifes willdeclared the winner;
 
-•	The player who run out of lifes, quit the game or having the lowest amount of € will be the loser;
+•	The player who run out of lifes or quit the game will be the loser;
 
 
 
@@ -41,9 +41,7 @@ Inspired on Who Wants to Be a Millionaire, The Quiz Game is open to anyone willi
                                                        
 •	Players are allowed three Lifelines that they can use at any point during the game. 
 
-
 •	Each Lifeline can only be used once.
-
 
 •	50/50 – eliminates two incorrect answers from the multiple-choice selection, leaving the player with only one correct and one incorrect option. This means they have a 50/50 chance.
 
