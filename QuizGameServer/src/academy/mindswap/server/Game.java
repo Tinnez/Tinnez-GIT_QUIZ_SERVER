@@ -28,6 +28,10 @@ public class Game {
         //   players = new ArrayList<>();
     }
 
+    /**
+     * Format the answers by removing or adding spaces.
+     * @param question
+     */
     private void formatQuestions(Question question, PlayerConnectionHandler playerConnectionHandler) {
 
         int space = question.getAnswerA().length() > question.getAnswerC().length() ?
@@ -56,7 +60,10 @@ public class Game {
 
         System.out.println();
     }
-
+    /**
+     *
+     * @return a question from a list of questions.
+     */
     public int getTotalNumberOfQuestions() {
         try {
             this.totalNumberOfQuestions = Files.readAllLines(Paths.get("./src/q&a.txt")).stream()
@@ -71,6 +78,12 @@ public class Game {
         return totalNumberOfQuestions;
     }
 
+    /**
+     *
+     * @param playerConnectionHandler
+     * @return read the file questions, returns a random non-repeated question to the player
+     * @throws IOException
+     */
     public Question pickRandomQuestion(PlayerConnectionHandler playerConnectionHandler) throws IOException {
 
         // toDo: Deviamos ter feito uma classe para ler o ficheiro todo e ir buscar daí em vez de o ler sempre que fazemos questão nova
@@ -117,6 +130,11 @@ public class Game {
         return pickRandomQuestion(playerConnectionHandler);
     }
 
+    /**
+     *
+     * @param playerConnectionHandler, transmit to the player a hint. Each player has a finite number of hints
+     */
+
     private void show_Hint(PlayerConnectionHandler playerConnectionHandler) {
 
         if (playerConnectionHandler.getHintsRemaining() == 0) {
@@ -136,6 +154,13 @@ public class Game {
         playerConnectionHandler.setHintsRemaining(playerConnectionHandler.getHintsRemaining() - 1);
         question.setShowHint(true);
     }
+
+    /**
+     *
+     * @param playerConnectionHandler,  delete 2 of the wrong answers. Each player has a finite number of 50/50.
+     * @throws IOException
+     * @throws InterruptedException
+     */
 
     private void show_5050(PlayerConnectionHandler playerConnectionHandler) throws IOException, InterruptedException {
 
@@ -224,6 +249,10 @@ public class Game {
 
     }
 
+    /**
+     * loading method
+     * @throws InterruptedException
+     */
     private void loading() throws InterruptedException {
 
         System.out.println();
@@ -571,8 +600,8 @@ public class Game {
         System.out.println("Ready to play!");
 
         Thread.sleep(500);
-//        new Thread(this).start();
-        run();
+//        new Thread(this).start(); caso fosse runnable, chamavamos o start para comecar a run do server (que seria = ao metodo play())
+        play();
     }
 
     public void broadcast_(String name, String message) {
@@ -794,7 +823,7 @@ public class Game {
 
     }
 
-    public void run() {
+    public void play() {
 
         try {
             Thread.sleep(500);
@@ -831,9 +860,7 @@ public class Game {
                 } catch (IOException | InterruptedException e) {
                     e.printStackTrace();
                 }
-
             }
-
         }
     }
 
